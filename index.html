@@ -1,114 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="author" content="KMorgan" />
-    <meta
-      name="description"
-      content="This page contains preliminary html topics."
-    />
+    <meta name="description" content="This page contains preliminary html topics." />
     <title>My first website</title>
     <link rel="icon" href="html-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" type="text/css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-<h1>My Goals for the Year</h1>
+        <h1>My Goals for the Year</h1>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#html">Learning HTML</a>
-          </li>
-          <li>
-            <a href="#vacation">Planning a Vacation</a>
-          </li>
-        </ul>
-      </nav>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <hr />
-    <section id="html">
-      <h2>I'm ready to learn html.</h2>
-      <p>This is my first webpage.</p>
-      <img
-        src="img/html-icon.png"
-        alt="HTML5 Logo"
-        title="I am learning HTML5"
-        width="200"
-        height="200"
-      />
-      <figure>
-        <figcaption>An Example of HTML5 code</figcaption>
+    <main>
+        <article id="html">
+            <h2>I'm ready to learn html.</h2>
+            <p>This is my first webpage.</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/html-icon.png" alt="HTML5 Logo" title="I am learning HTML5" width="200" height="200" />
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+
+            <section>
+                <h3>My favorite cat:</h3>
+                <p>I love my cat Pepper...</p>
+                <ol>
+                    <li>
+                        ... she is the cutest
+                        <a href="https://en.wikipedia.org/wiki/Cat">cat</a> ever.
+                    </li>
+                    <li>... she went to the vet today.</li>
+                    <li>... she is 13 years old.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>number of hours</mark> I code per day
+                        </summary>
+                        <p>
+                            I start at <time datetime="08:00">8 am</time> and I write code
+                            for <time datetime="PT3H">3 hours</time> every morning.
+                        </p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+
+        <hr />
+
+        <article id="vacation">
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been working <em>hard</em> and want to go camping.</p>
+            <p>
+                I live in <abbr title="Utah">UT</abbr> so I want to visit Kodachrome
+                State Park.
+            </p>
+            <figure>
+                <img src="img/kodachrome.jpg" alt="Kodachrome State Park" title="I want to visit these stone pillars."
+                    width="400" height="600" loading="lazy" />
+                <figcaption>A Rock Pillar in Kodachrome</figcaption>
+            </figure>
+
+            <section>
+                <h3>Places I'd Like to Visit</h3>
+                <ul>
+                    <li>
+                        <p>Hawaii sounds fun.</p>
+                    </li>
+                    <li>
+                        <p>I've heard good things about going here:</p>
+                        <address>
+                            Margaritaville, <br />
+                            Cancun <br />
+                            Mexico
+                        </address>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- TODO: Add more places -->
+
+            <section>
+                <h3>Places I Want to Avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold</strong>!</dd>
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
+                    <dd>These are are both a "no" from me.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+
+    <hr />
+
+    <footer>
         <p>
-          <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            &lt;&lt;&lt; &copy; <a href="about.html">Kitty Morgan</a> &gt;&gt;&gt;
         </p>
-      </figure>
 
-      <h3>My favorite cat:</h3>
-      <p>I love my cat Pepper...</p>
-      <ol>
-        <li>
-          ... she is the cutest
-          <a href="https://en.wikipedia.org/wiki/Cat">cat</a> ever.
-        </li>
-        <li>... she went to the vet today.</li>
-        <li>... she is 13 years old.</li>
-      </ol>
-    </section>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+</body>
 
-    <hr />
-
-    <section id="vacation">
-      <h2>I Am Also Planning a Vacation</h2>
-      <p>I've been working <em>hard</em> and want to go camping.</p>
-      <p>
-        I live in <abbr title="Utah">UT</abbr> so I want to visit Kodachrome
-        State Park.
-      </p>
-      <figure>
-        <img
-          src="img/kodachrome.jpg"
-          alt="Kodachrome State Park"
-          title="I want to visit these stone pillars."
-          width="400"
-          height="600"
-          loading="lazy"
-        />
-        <figcaption>A Rock Pillar in Kodachrome</figcaption>
-      </figure>
-
-      <h3>Places I'd Like to Visit</h3>
-      <ul>
-        <li><p>Hawaii sounds fun.</p></li>
-        <li>
-          <p>I've heard good things about going here:</p>
-          <address>
-            Margaritaville, <br />
-            Cancun <br />
-            Mexico
-          </address>
-        </li>
-      </ul>
-
-      <!-- TODO: Add more places -->
-      <h3>Places I Want to Avoid</h3>
-      <dl>
-        <dt>North Pole</dt>
-        <dd>I hear this is <strong>cold</strong>!</dd>
-
-        <dt>South Pole</dt>
-        <dd>This is also cold.</dd>
-        <dd>These are are both a "no" from me.</dd>
-      </dl>
-    </section>
-
-    <hr />
-    &lt;&lt;&lt; &copy; <a href="about.html">Kitty Morgan</a> &gt;&gt;&gt;
-
-    <p>
-      <a href="#">Back to Top</a>
-    </p>
-  </body>
 </html>
